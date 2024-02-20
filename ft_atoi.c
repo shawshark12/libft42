@@ -1,27 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/18 17:58:04 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/20 22:45:00 by npungkor         ###   ########.fr       */
+/*   Created: 2024/02/20 22:30:21 by npungkor          #+#    #+#             */
+/*   Updated: 2024/02/20 22:43:49 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
+	int	sign;
+	unsigned long int bag;
 
 	i = 0;
-	while (s[i])
+	sign = 1;
+	bag = 0;
+	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
+		i++;
+	if (nptr[i] == '-')
 	{
-		if (s[i] == c)
-			return ((char *)s + i);
+		sign = -1;
 		i++;
 	}
-	return (0);
+	else if (nptr[i] == '+')
+		i++;
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		result *= 10;
+		resilt += nptr[i] - '0';
+		i++;
+	}
+	return (result * sign);
 }

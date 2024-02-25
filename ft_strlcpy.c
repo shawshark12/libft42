@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 22:01:20 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/20 22:47:36 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/02/22 21:50:41 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (size == 0)

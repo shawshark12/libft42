@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 22:30:21 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/20 22:43:49 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/02/20 22:56:15 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	sign;
-	unsigned long int bag;
+	int	bag;
 
 	i = 0;
 	sign = 1;
@@ -32,9 +32,9 @@ int	ft_atoi(const char *nptr)
 		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		result *= 10;
-		resilt += nptr[i] - '0';
+		bag *= 10;
+		bag += nptr[i] - '0';
 		i++;
 	}
-	return (result * sign);
+	return (bag * sign);
 }

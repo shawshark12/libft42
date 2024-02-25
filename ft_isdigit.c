@@ -5,22 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 16:48:45 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/22 22:03:58 by npungkor         ###   ########.fr       */
+/*   Created: 2024/02/25 18:25:42 by npungkor          #+#    #+#             */
+/*   Updated: 2024/02/25 18:26:47 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_isdigit('0'));
-	printf("%d\n", ft_isdigit('9'));
 }

@@ -5,14 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 16:10:34 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/15 16:17:48 by npungkor         ###   ########.fr       */
+/*   Created: 2024/02/25 18:21:29 by npungkor          #+#    #+#             */
+/*   Updated: 2024/02/25 18:25:25 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_isalpha(int c)
 {
-	if (c <= '0' && c >= '9')
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
 	return (0);
 }

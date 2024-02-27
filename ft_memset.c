@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/25 19:35:29 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/26 16:19:10 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/02/27 18:20:12 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	*ft_memset(void	*s, int c, size_t n)
 	while (i < n)
 	{
 		dest[i] = (unsigned char)c;
+		i++;
 	}
 	return (s);
 }

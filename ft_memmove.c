@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 15:55:41 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/27 18:06:00 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/03/03 17:12:21 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
+	{
 		while (i < n)
+		{
 			d[i] = s[i];
+			i++;
+		}
+	}
 	return (dest);
 }

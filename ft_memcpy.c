@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 16:28:24 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/27 18:05:29 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/03/03 16:49:10 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*d = *s;
 		d++;
 		s++;
+		n--;
 	}
 	return (dest);
 }

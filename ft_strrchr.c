@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 18:30:15 by npungkor          #+#    #+#             */
-/*   Updated: 2024/02/20 22:46:00 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/03/15 21:01:12 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strrchr(const char *s, int c)
 	while (i >= 0)
 	{
 		if (s[i] == c)
-			return ((char *)s + i);
+			return ((char *)&s[i]);
 		i--;
 	}
 	return (0);

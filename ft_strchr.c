@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 17:58:04 by npungkor          #+#    #+#             */
-/*   Updated: 2024/03/15 20:27:25 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/03/15 21:28:09 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-	unsigned char bag;
+	unsigned char	bag;
+	int				i;
 
 	bag = (unsigned char)c;
 	i = 0;

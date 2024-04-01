@@ -6,7 +6,7 @@
 #    By: npungkor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/17 21:26:47 by npungkor          #+#    #+#              #
-#    Updated: 2024/03/25 19:06:22 by npungkor         ###   ########.fr        #
+#    Updated: 2024/04/01 18:31:48 by npungkor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,9 @@ SRCS =	ft_atoi.c \
 	ft_tolower.c \
 	ft_toupper.c \
 	ft_calloc.c \
-	ft_strdup.c
+	ft_strdup.c \
+	ft_substr.c \
+	ft_strjoin.c
 
 SRCS_BONUS =
 

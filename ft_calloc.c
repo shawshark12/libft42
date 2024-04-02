@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 18:40:11 by npungkor          #+#    #+#             */
-/*   Updated: 2024/03/25 19:57:55 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/04/02 19:25:49 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	char	*p;
 
-	if (count < 0 || size < 0 || (count && SIZE_MAX / count < size))
+	if (count == 0 || size == 0 || (count && SIZE_MAX / count < size))
 		return (NULL);
 	p = malloc(count * size);
 	if (p == NULL)

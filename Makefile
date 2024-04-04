@@ -6,7 +6,7 @@
 #    By: npungkor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/17 21:26:47 by npungkor          #+#    #+#              #
-#    Updated: 2024/04/01 18:31:48 by npungkor         ###   ########.fr        #
+#    Updated: 2024/04/04 22:37:44 by npungkor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,9 @@ SRCS =	ft_atoi.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 	ft_putstr_fd.c \
-	ft_spilt.c
+	ft_split.c
+
+HDR=libft.h
 
 SRCS_BONUS =
 

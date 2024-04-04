@@ -6,7 +6,7 @@
 /*   By: npungkor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/25 18:40:11 by npungkor          #+#    #+#             */
-/*   Updated: 2024/04/02 19:25:49 by npungkor         ###   ########.fr       */
+/*   Updated: 2024/04/04 22:34:00 by npungkor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*p;
+	void	*p;
 
-	if (count == 0 || size == 0 || (count && SIZE_MAX / count < size))
+	if (count == SIZE_MAX || size == SIZE_MAX)
 		return (NULL);
 	p = malloc(count * size);
 	if (p == NULL)
 		return (NULL);
 	ft_bzero(p, count * size);
-	return ((void *)p);
+	return (p);
 }

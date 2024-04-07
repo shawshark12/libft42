@@ -10,6 +10,7 @@
 # **************************************************************************** #
 
 NAME =	libft.a
+
 SRCS =	ft_atoi.c \
 	ft_bzero.c \
 	ft_isalnum.c \
@@ -57,7 +58,7 @@ $(NAME): $(OBJS)
 	ar rcs $@ $^
 
 %.o : %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
+	$(CC) -c $(CFLAGS) $^ -o $@
 
 clean :
 	rm -rf $(OBJS)
